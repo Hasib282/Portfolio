@@ -46,8 +46,7 @@
     }
      
     
-    h4{
-        margin: 10px;
+    .hi{
         text-align: center;
     }
     /* aboutme part css end here */
@@ -66,7 +65,7 @@
         height: 190px;
     }
 
-    h4{
+    .hi{
         font-size: 18px;
     }
     
