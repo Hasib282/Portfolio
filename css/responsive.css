@@ -50,6 +50,16 @@
         text-align: center;
     }
     /* aboutme part css end here */
+
+
+    /* Skills part css start here */
+    .skills p{
+        font-size: 14px;
+    }
+
+    .skill-container{
+        width: 100%;
+    }
 }
 
 
