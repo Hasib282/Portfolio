@@ -1,0 +1,97 @@
+/* ////////////////// For the mobile device having maximum width 1024px //////////////// */
+@media screen and (max-width:1024px) {
+
+}
+
+
+/* ////////////////// For the mobile device having maximum width 768px //////////////// */
+@media screen and (max-width:768px) {
+    .parent{
+        flex-direction: column;
+    }
+
+    /* header part css start here */
+    .navbar{
+        display: none;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+    .toggle{
+        display: block;
+        line-height: 75px;
+        color: #0082C6;
+        font-size: 28px;
+    }
+
+    /* header part css end here */
+
+
+    /* aboutme part css start here */
+    .image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .image img{
+        width: 50%;
+    }
+    
+    
+    .about{
+        width: 100%;
+    }
+     
+    
+    h4{
+        margin: 10px;
+        text-align: center;
+    }
+    /* aboutme part css end here */
+}
+
+
+/* ////////////////// For the mobile device having maximum width 500px //////////////// */
+@media screen and (max-width:500px) {
+    
+    /* aboutme part css start here */
+
+
+    
+    .image img{
+        width: auto; 
+        height: 190px;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+    
+
+    /* aboutme part css end here */
+
+}
+
+
+
+
+/* ////////////////// For the mobile device having maximum width 320px //////////////// */
+@media screen and (max-width:320px) {
+    /* aboutme part css start here */
+    .heading{
+        text-align: center;
+        font-size: 45px;
+        text-transform: uppercase;
+        color: white;
+        margin: 20px 0; 
+    }
+    
+
+    
+
+    
+    /* aboutme part css end here */
+}

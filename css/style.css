@@ -1,0 +1,180 @@
+/* :root{
+    --font-media-1024: 
+} */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #0082C6;
+}
+
+body{
+    background: #000117;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 90vw;
+    overflow: hidden;
+}
+
+.parent{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+/* .heading{
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: white;
+    margin: 20px auto;
+} */
+
+/* header part css start here */
+.toggle{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #02033b;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.logo img:hover{
+    width: 100px;
+}
+
+
+.navbar ul li{
+    display: inline-flex;
+    line-height: 80px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+/* header part css end here */
+
+
+
+/* banner part css start here */
+
+/* banner part css end here */
+
+
+
+
+/* about me part css start here */
+#aboutme{
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.image{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.image img{
+    width: 80%;
+} 
+
+.about{
+    width: 60%;
+    padding: 0 20px;
+}
+
+
+.about p{
+    text-align: justify;
+    line-height: 25px;
+}
+
+
+h4{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* about me  part css end here */ 
+
+
+
+
+/* working-industry part css start here */
+
+
+/* working-industry part css end here */
+
+
+
+
+/* footer part css start here */
+footer{
+    background: #02033b;
+}
+
+.foot2{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.sociallink ul li:hover a{
+    color: lightseagreen;
+}
+
+.foot2 .sociallink ul li{
+    display: inline-flex;
+    font-size: 25px;
+    line-height: 60px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+
+
+/* footer part css end here */
+
+
+
+
