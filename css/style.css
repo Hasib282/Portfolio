@@ -224,6 +224,12 @@ header{
 
 
 
+.contact, .projects, .experiences,.contact img, .projects img, .experiences img {
+    width: 100%;
+}
+
+
+
 
 
 /* footer part css start here */
