@@ -1,11 +1,8 @@
-/* :root{
-    --font-media-1024: 
-} */
-
 *{
     margin: 0;
     padding: 0;
     outline: 0;
+    border: 0;
     list-style: none;
 }
 
@@ -32,6 +29,13 @@ body{
     overflow: hidden;
 }
 
+.parent-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
 
 section{
     padding: 60px 0;
@@ -40,6 +44,9 @@ section{
     align-items: center;
 }
 
+.contact, .projects, .experiences,.contact img, .projects img, .experiences img {
+    width: 100%;
+}
 
 /* .heading{
     text-align: center;
@@ -55,6 +62,7 @@ section{
 }
 
 header{
+    height: 80px;
     display: flex;
     justify-content: center;
     background-color: #02033b;
@@ -87,18 +95,101 @@ header{
 
 .navbar ul li{
     display: inline-flex;
-    line-height: 80px;
+    line-height: 60px;
     font-weight: 500;
     padding: 0 10px;
 }
 
+
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #0082C6;
+    transition: width .5s ease-in-out ;
+}
+
+.link:hover::after{
+    width: 100%;
+}
+
+.link:hover{
+    color: #42a4d4;
+}
+
+
+.resume a{
+    background: linear-gradient(to right,#0082C6,#2d9fd8,#0082C6);
+    line-height: 20px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: black;
+}
+
+.resume:hover a{
+    background: linear-gradient(to bottom,#0082C6,#2d9fd8,#0082C6);
+}
 /* header part css end here */
 
 
 
-/* banner part css start here */
+/* sidebar part css start here */
+.sidenav-container{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    left: 0;
+    background-color: rgba(10, 10, 10, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
 
-/* banner part css end here */
+    top: 80px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.show{
+    display: block;
+}
+
+.width{
+    width: 100%;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* sidebar part css end here */
 
 
 
@@ -192,9 +283,7 @@ header{
 
 .skill:hover .overlay{
     background-color: white;
-    opacity: 0.8;
-    /* display: block; */
-    
+    opacity: 0.8;    
 }
 
 .skill:hover .overlay p{
@@ -223,13 +312,75 @@ header{
 /* Skills part css start here*/
 
 
+/* contact part css start here */
+/* .form{
+    width: 50%;
+} */
 
-.contact, .projects, .experiences,.contact img, .projects img, .experiences img {
-    width: 100%;
+/* .contact{
+    justify-content: center;
+} */
+
+.info{
+    padding: 30px 0;
+    font-size: 18px;
+    line-height: 42px;
+    /* text-align: center; */
+}
+
+.info i{
+    font-size: 25px;
+    margin-right: 20px;
+    color: #0082C6;
+}
+
+.info a{
+    color: white;
 }
 
 
 
+form input, textarea{
+    width: 360px;
+    height: 40px;
+    padding: 5px 2%;
+    margin: 3px 0;
+    font-size: 18px;
+    background: #323657;
+    color: #5778ee;
+    border-bottom: 4px solid transparent;
+}
+
+
+
+input:hover,textarea:hover{
+    border-bottom: 4px solid #15166e;
+}
+
+
+textarea{
+    height: 80px;
+}
+
+
+::placeholder{
+    color: #5778ee;
+}
+
+
+form button{
+    width: 104%;
+    height: 60px;
+    padding: 5px 0;
+    margin: 2px 0;
+    font-size: 18px;
+    background-color: #15166e;
+    color: #8f959b;
+}
+
+
+
+/* contact part css end here */
 
 
 /* footer part css start here */

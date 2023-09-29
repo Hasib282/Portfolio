@@ -60,11 +60,22 @@
     .skill-container{
         width: 100%;
     }
+
+    .skill:hover .overlay p{
+        font-size: 25px;
+    }
+
+
+    
 }
 
 
 /* ////////////////// For the mobile device having maximum width 500px //////////////// */
 @media screen and (max-width:500px) {
+
+    .heading{
+        font-size: 35px;
+    }
     
     /* aboutme part css start here */
 
@@ -82,6 +93,30 @@
 
     /* aboutme part css end here */
 
+
+    .skill:hover .overlay p{
+        font-size: 18px;
+    }
+
+
+    .form{
+        width: 80%;
+    }
+
+    form input, textarea{
+        width: 99%;
+        font-size: 16px;
+    }
+
+    textarea{
+        height: 80px;
+    }
+
+ 
+    form button{
+        font-size: 16px;
+    }
+
 }
 
 
@@ -89,18 +124,17 @@
 
 /* ////////////////// For the mobile device having maximum width 320px //////////////// */
 @media screen and (max-width:320px) {
-    /* aboutme part css start here */
-    .heading{
-        text-align: center;
-        font-size: 45px;
-        text-transform: uppercase;
-        color: white;
-        margin: 20px 0; 
+    section{
+        padding: 25px 0;
     }
-    
 
     
+    /* skill part css start here */
 
+    .skill:hover .overlay p{
+        font-size: 14px;
+    }
+
+    /* skill part css end here */
     
-    /* aboutme part css end here */
 }
