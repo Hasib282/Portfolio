@@ -265,7 +265,7 @@ header{
 
 .skill{
     position: relative;
-    width:18%;
+    width:15%;
     border-radius: 100%;
     border: 1px solid lightgrey;
     margin: 1%;
@@ -309,7 +309,81 @@ header{
     display: none;
 }
 
-/* Skills part css start here*/
+/* Skills part css end here*/
+
+
+
+/* Experience part css satar here*/
+.experiences{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px 0;
+}
+
+
+.experience{
+    display: grid;
+    grid-template-columns: 1fr 50px 2fr;
+    align-items: start;
+    gap: 5px;
+    min-height: 180px;
+}
+
+.experience h3 {
+    margin: 0;
+    color: #0b3d91;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.experience p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 14px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.experience-details .company-details{
+    padding: 10px 0;
+    line-height: 25px;
+}
+
+/* Center (Dot + Line) */
+.center-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.center-circle .dot-circle{
+    border: 2px dashed;
+    border-radius: 50%;
+}
+
+.dot-circle .dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: block;
+  margin: 6px;
+}
+
+.center-circle .line {
+  flex: 1;
+  border: 1px dashed;
+  
+}
+
+/* Dot Colors */
+.dot.green { background: #2ecc71; }
+.dot.red { background: #e74c3c; }
+.dot.yellow { background: #f1c40f; }
+
+
+/* Experience part css end here*/
 
 
 /* contact part css start here */
