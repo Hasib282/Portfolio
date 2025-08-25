@@ -64,7 +64,33 @@
     .skill:hover .overlay p{
         font-size: 25px;
     }
+    /* skills part css end here */
+    
 
+    /* experience part css start here */
+    .experience{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 5px;
+    }
+
+    .center-circle{
+        display: none;
+    }
+    
+    .experience p {
+        padding-left: 15px;
+    }
+    
+    .experience h3 {
+        padding-left: 15px;
+    }
+    
+    .experience h2 {
+        color: #0a5be3;
+    }
+    /* experience part css end here */
 
     
 }

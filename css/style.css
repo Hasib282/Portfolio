@@ -317,7 +317,7 @@ header{
 .experiences{
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
+    max-width: 100%;
     margin: auto;
     padding: 10px 0;
 }
@@ -332,6 +332,12 @@ header{
 }
 
 .experience h3 {
+    margin: 0;
+    color: #0b3d91;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.experience h2 {
     margin: 0;
     color: #0b3d91;
     font-size: 18px;
@@ -386,15 +392,79 @@ header{
 /* Experience part css end here*/
 
 
-/* contact part css start here */
-/* .form{
-    width: 50%;
-} */
 
-/* .contact{
+/* Project part css Start here*/
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.project-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit:fill;
+}
+
+.project-card .content {
+    padding: 5px 15px;
+    height: 210px;
+}
+
+.project-card h3 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    color: #0b3d91;
+}
+
+.project-card p {
+    height: 130px;
+    font-size: 0.95rem;
+    color: #666;
+    /* margin: 10px 0; */
+    overflow: hidden;
+}
+
+.project-card .project-links{
+    display: flex;
+    align-items: center;
     justify-content: center;
-} */
+}
 
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.project-card a:hover {
+    background: #0056b3;
+}
+/* Project part css end here*/
+
+
+/* contact part css start here */
 .info{
     padding: 30px 0;
     font-size: 18px;
